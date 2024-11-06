@@ -1,0 +1,27 @@
+.header {
+  background: rgba(0, 0, 0, 0.57);
+  padding: 2rem;
+  display: flex;
+}
+/* Menu style */
+.menuButton {
+  background-color: white;
+} 
+.menuButton:hover {
+  background-color: #a0a2a4;
+}
+.menuContent {
+  border-radius: 8px;
+}
+.menuItem {
+  padding: 8px 16px;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+.h1 {
+  color: white;
+  font-size: 24px;
+  width: max-content;
+  padding-left: 1%;
+}
