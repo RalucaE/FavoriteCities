@@ -7,9 +7,9 @@ export default function Home() {
       <Head>
         <title>Welcome</title>
       </Head>
-      <div className={`${styles.page}`}>
+      <div className={styles.page}>
         <main className={styles.main}>
-         <h1> Welcome to Favorite Cities</h1>
+          <h1>Welcome to Favorite Cities</h1>        
         </main>
       </div>
     </>

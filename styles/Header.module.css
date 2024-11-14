@@ -2,12 +2,29 @@
   background: rgba(0, 0, 0, 0.57);
   padding: 2rem;
   display: flex;
+  justify-content: space-between;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
 }
 /* Menu style */
 .menuButton {
   background-color: white;
 } 
 .menuButton:hover {
+  background-color: #a0a2a4;
+}
+.userButton {
+  
+  background-color: white;
+} 
+.userButton:hover {
   background-color: #a0a2a4;
 }
 .menuContent {
@@ -23,5 +40,8 @@
   color: white;
   font-size: 24px;
   width: max-content;
-  padding-left: 1%;
+  padding-left: 10px;
+}
+.h2 {
+  padding-right: 10px;
 }

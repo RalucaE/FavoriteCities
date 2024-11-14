@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export default function Favorites() {
     return (
         <>
@@ -6,4 +8,5 @@ export default function Favorites() {
             </Head>
             <h1>Favorites Cities</h1>
         </>
-    );}
+    );
+}
