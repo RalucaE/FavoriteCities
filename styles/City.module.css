@@ -1,0 +1,18 @@
+.page {
+    background-color: antiquewhite;  
+    border-radius: 2rem;
+    padding: 15px;
+    color: black;
+    margin: 15px;
+}
+.title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.subtitle {
+    margin-top: 15px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
