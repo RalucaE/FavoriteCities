@@ -1,7 +1,4 @@
-.page {
-  padding: 2rem;  
-  justify-items: center;
-}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -9,7 +6,7 @@
 }
 .input {
   width: 500px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 15px;
   color: black;
 }
@@ -17,27 +14,22 @@
   padding: 10px;
   width: 100px;
   background-color: rgb(0, 2, 1);
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: white;
 }
 .button:Hover {
   cursor: pointer;
 }
 .results {
-  background-color: antiquewhite;  
+  background: var(--chakra-colors-white-alpha-400);
   row-gap: 20px;
   width: 500px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 20px;
-  color: black;
   max-height: 350px;
   overflow-y: scroll;
- 
 }
 .item {
-  background-color: rgb(255, 233, 233);
-  border-radius: 2rem;
-  border: 1px solid black;
   padding: 8px;
 }
 .results::-webkit-scrollbar {

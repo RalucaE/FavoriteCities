@@ -9,11 +9,9 @@ export default function Search() {
   const [cityData, setCityData] = useState("");
 
     const handleSearch = async () => {
-      try {
-        console.log(cityName);
-          const cityData = await getCityDetails(cityName);
-          console.log(cityData.results);
-          setCityData(cityData.results);
+      try {  
+        const response = await getCityDetails(cityName);     
+          setCityData(response.results);
       } catch (error) {
           console.error('City not found');
       }
@@ -41,7 +39,7 @@ export default function Search() {
           </button>
           {cityData && (
             <div className={styles.results}>
-              <ul>
+              <ul className={styles.list}>
                 {cityData.map((city, index) => (             
                   <Link  key={index}
                     href={{
@@ -49,7 +47,13 @@ export default function Search() {
                      query: { latitude: city.latitude, longitude: city.longitude, cityName: city.name },
                     }}>
                       <li className={styles.item} onClick={() => handleCityClick(city)}>
-                        {city.name}, {city.country} - Latitude: {city.latitude}, Longitude: {city.longitude}
+                        {city.name} - {city.country}
+                        <hr className={styles.hr}></hr>
+                        Latitude: {city.latitude}
+                        <br></br>
+                        Longitude: {city.longitude}
+                        <br></br>
+                        Population: {city.population}                         
                       </li>
                   </Link>             
                 ))}

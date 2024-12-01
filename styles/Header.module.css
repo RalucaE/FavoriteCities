@@ -1,5 +1,6 @@
 .header {
-  background: rgba(0, 0, 0, 0.57);
+  /* background: rgba(0, 0, 0, 0.57); */
+  background: var(--chakra-colors-gray-700);
   padding: 2rem;
   display: flex;
   justify-content: space-between;

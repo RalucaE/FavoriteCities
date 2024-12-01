@@ -1,18 +1,30 @@
-.page {
-    background-color: antiquewhite;  
-    border-radius: 2rem;
-    padding: 15px;
-    color: black;
-    margin: 15px;
+.container {
+    display: flex;
+}
+.details {
+    display: flex;
+    gap: 5rem
 }
 .title {
-    color: black;
-    font-size: 20px;
     font-weight: bold;
 }
 .subtitle {
-    margin-top: 15px;
-    color: black;
-    font-size: 17px;
+    margin-top: 15px;  
+    font-size: 20px;
     font-weight: bold;
+}
+.img {
+    width: 50%;
+    height: 50%;
+    margin: 2% 0% 0% 2%;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: disc;
+    padding: 2%;
+}
+.listItem {
+    padding: 5px;
+    text-align: left;
 }
