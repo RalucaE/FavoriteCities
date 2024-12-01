@@ -2,7 +2,6 @@ import Link from 'next/link';
 import {Button} from "@/components/ui/button";
 import styles from "@/styles/Header.module.css";
 import { useSession, signIn, signOut } from "next-auth/react";
-import {  useState } from 'react';
 import {
     MenuContent,
     MenuItem,
@@ -33,7 +32,10 @@ export default function Header() {
             </MenuItem>
             <MenuItem className={`${styles.menuItem}`}>
               <Link href="/favorites">Favorites</Link>
-            </MenuItem>          
+            </MenuItem> 
+            <MenuItem className={`${styles.menuItem}`}>
+              <Link href="/cities">Cities</Link>
+            </MenuItem>         
           </MenuContent>
         </MenuRoot>
         <h1 className={`${styles.h1}`}>
@@ -53,15 +55,24 @@ export default function Header() {
                 <img src="/images/user.svg" alt="Menu Icon" className="menu-icon" />
               </Button>
             </MenuTrigger>
-            <MenuContent className={`${styles.menuContent}`} >
-              <MenuItem className={`${styles.menuItem}`}>
-                {session ? (
-                  <button onClick={() => signOut()}>Sign out</button>      
+            <MenuContent className={`${styles.menuContent}`} >           
+              {session ? (
+                  <MenuItem className={`${styles.menuItem}`}>
+                    <button onClick={() => signOut()}>Sign out</button>    
+                  </MenuItem>      
                   ) : (
-                    <button onClick={() => signIn()}>Sign in</button>
-                  )
-                }            
-              </MenuItem>                   
+                  <>
+                    <MenuItem className={`${styles.menuItem}`}>
+                      <button onClick={() => signIn()}>Login</button>
+                    </MenuItem> 
+                    <MenuItem className={`${styles.menuItem}`}>
+                      <Link href='/register'>
+                        <button>Register</button> 
+                      </Link>
+                    </MenuItem>
+                  </>
+                )
+              }                                        
             </MenuContent>
           </MenuRoot>
         </div>

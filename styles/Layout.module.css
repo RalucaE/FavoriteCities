@@ -1,0 +1,12 @@
+.page {
+  background: var(--chakra-colors-gray-700);
+  border-radius: 1rem;
+  padding: 40px;
+  margin: 10px;
+  justify-items: center;
+  height: 580px;
+  overflow-x: scroll;
+}
+.page::-webkit-scrollbar {
+  display: none;
+}

@@ -1,12 +1,15 @@
 import Header from './Header';
+import styles from "@/styles/Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <>
      <Header />
-      <main >
+     <div className={styles.page}>
+      <main  >
         {children}
       </main>
+      </div>
     </>
   );
 };

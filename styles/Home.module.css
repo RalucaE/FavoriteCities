@@ -1,4 +1,11 @@
-.page {
+.main {
   justify-items: center;
-  padding: 80px;
 }
+.title {
+  padding: 3%;
+}
+.img {
+  width: 90%;
+  height: 400px;
+}
+

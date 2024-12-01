@@ -9,7 +9,8 @@ export default function Home() {
       </Head>
       <div className={styles.page}>
         <main className={styles.main}>
-          <h1>Welcome to Favorite Cities</h1>        
+          <h1 className={styles.title}>Welcome to Favorite Cities</h1>  
+          <img src="/images/landscape.avif" alt="Menu Icon" className={styles.img} />      
         </main>
       </div>
     </>
